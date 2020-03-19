@@ -6,8 +6,16 @@ public class Todo {
     private String description;
     private int priority;
     private Date dueDate;
-    private User responsible;
+    private String responsible;
     private String status;
+
+    public Todo(String description, int priority, Date dueDate, String responsible, String status) {
+        this.description = description;
+        this.priority = priority;
+        this.dueDate = dueDate;
+        this.responsible = responsible;
+        this.status = status;
+    }
 
     public String getDescription() {
         return description;
@@ -21,7 +29,7 @@ public class Todo {
         return dueDate;
     }
 
-    public User getResponsible() {
+    public String getResponsible() {
         return responsible;
     }
 
@@ -41,7 +49,7 @@ public class Todo {
         this.dueDate = dueDate;
     }
 
-    public void setResponsible(User responsible) {
+    public void setResponsible(String responsible) {
         this.responsible = responsible;
     }
 
